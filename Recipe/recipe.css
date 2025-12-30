@@ -77,6 +77,10 @@ padding-left: 5% !important;
 
 .rightBox {
     position: relative;
+    overflow: hidden;
+    transition: all 0.3s linear 0s;
+    box-shadow: 2px 2px 10px rgb(142, 36, 4);
+    border-radius: 5%;
 }
 .rightBox img {
     height: 300px;
@@ -89,7 +93,29 @@ padding-left: 5% !important;
     border-radius: 50%;
 }
 
+.rightBox .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #674848;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.3s linear 0s;
+}
 
+.rightBox:hover .overlay{
+    opacity: 0.3;
+}
+
+.rightBox .overlay span {
+    color: white;
+    font-size: 1.6rem;
+}
 
 
 
